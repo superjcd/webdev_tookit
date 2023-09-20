@@ -29,6 +29,7 @@ func NewDbOptions(user, password, host, port, database string) *Options {
 		Host:     host,
 		Port:     port,
 		Database: database,
+		Cfg:      &gorm.Config{},
 	}
 }
 
