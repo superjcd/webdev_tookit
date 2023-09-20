@@ -68,6 +68,7 @@ func NewSqliteDb(file string, cfg *gorm.Config) (*gorm.DB, error) {
 
 func NewMysqlDb(user, pass, host, port, database string, cfg *gorm.Config) (*gorm.DB, error) {
 	dsn := fmt.Sprintf("%s:%s@tcp(%s:%s)/%s?charset=utf8mb4&parseTime=True&loc=Local", user, pass, host, port, database)
+	fmt.Println(">>>>>>>>" + dsn + "<<<<<<<<<")
 	db, err := gorm.Open(mysql.Open(dsn), cfg)
 	return db, err
 }
