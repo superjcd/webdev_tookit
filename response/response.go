@@ -33,3 +33,19 @@ func FetchOneOk(c *gin.Context, data any) {
 func FetchManyOk(c *gin.Context, datas any) {
 	c.JSON(http.StatusOK, gin.H{"msg": "ok", "datas": datas})
 }
+
+func UpdateOneOk(c *gin.Context) {
+	c.JSON(http.StatusCreated, gin.H{"msg": "one updated"})
+}
+
+func UpdateManyOk(c *gin.Context) {
+	c.JSON(http.StatusCreated, gin.H{"msg": "many updated"})
+}
+
+func DeleteOneOk(c *gin.Context) {
+	c.JSON(http.StatusCreated, gin.H{"msg": "one deleted"})
+}
+
+func DeleteManyOk(c *gin.Context) {
+	c.JSON(http.StatusCreated, gin.H{"msg": "many deleted"})
+}
