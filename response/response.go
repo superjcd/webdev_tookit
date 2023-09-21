@@ -30,6 +30,6 @@ func FetchOneOk(c *gin.Context, data any) {
 	c.JSON(http.StatusOK, gin.H{"msg": "ok", "data": data})
 }
 
-func FetchManyOk(c *gin.Context, data []any) {
-	c.JSON(http.StatusOK, gin.H{"msg": "ok", "datas": data})
+func FetchManyOk(c *gin.Context, datas any) {
+	c.JSON(http.StatusOK, gin.H{"msg": "ok", "datas": datas})
 }
