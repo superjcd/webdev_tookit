@@ -1,4 +1,4 @@
-module github.com/superjcd/webdev_tookit
+module github.com/superjcd/webdev_toolkit
 
 go 1.20
 
